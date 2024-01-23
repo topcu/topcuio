@@ -7,6 +7,20 @@ body {
     position: relative;
 }
 
+input[type="text"], input[type="email"], input[type="password"], select {
+    background: transparent !important;
+    border: 1px solid $secondary !important;
+    color: #FFF !important;
+    padding: 15px !important;
+    border-radius: 15px !important;
+    &::placeholder {
+        color: #FFF !important;
+    }
+    &::-ms-input-placeholder { /* Edge 12 -18 */
+        color: #FFF !important;
+    }
+}
+
 a {
     color: $gray;
     font-size: 15px;
@@ -142,8 +156,10 @@ header {
         .button {
             background: $secondary;
             border-color: $secondary;
+            color: #202430 !important;
             &:hover {
                 background: transparent;
+                color: #FFF !important;
             }
         }
         .accordion {
