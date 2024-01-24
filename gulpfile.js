@@ -61,4 +61,5 @@ gulp.task('build', gulp.parallel('sass', 'js', function () {
 }));
 
 // Default görevi
-gulp.task('default', gulp.series('sass', 'js', 'serve'));
+// gulp.task('default', gulp.series('sass', 'js', 'serve'));
+gulp.task('default', gulp.series('sass', 'js'));
